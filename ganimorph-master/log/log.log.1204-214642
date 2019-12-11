@@ -1,0 +1,522 @@
+[32m[1204 21:24:57 @logger.py:90][0m Argv: /Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/ipykernel_launcher.py -f /Users/phyllisli19981111/Library/Jupyter/runtime/kernel-8a715b50-2963-4337-a529-3722b589857f.json
+[32m[1204 21:25:12 @input_source.py:223][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/conv0': [?, 3, 128, 128] --> [?, 64, 64, 64]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/conv1': [?, 64, 64, 64] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res0/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res0/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res0/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res1/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res1/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res1/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res2/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res2/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer1/res2/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/conv2': [?, 128, 32, 32] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res0/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res0/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res0/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res1/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res1/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res1/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res2/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:15 @registry.py:90][0m 'gen/B/layer2/res2/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer2/res2/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/conv3': [?, 256, 16, 16] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res0/conv0': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res0/conv1': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res0/conv2': [?, 1024, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res1/conv0': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res1/conv1': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res1/conv2': [?, 1024, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res2/conv0': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res2/conv1': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/layer3/res2/conv2': [?, 1024, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/deconv0': [?, 512, 8, 8] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res0/conv0': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res0/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res0/conv2': [?, 768, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res1/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res1/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res1/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res2/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res2/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer2/res2/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/deconv1': [?, 256, 16, 16] --> [?, 128, 32, 32]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer1/res0/conv0': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:16 @registry.py:90][0m 'gen/B/blayer1/res0/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/blayer1/res0/conv2': [?, 384, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/blayer1/res1/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/blayer1/res1/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/blayer1/res1/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/blayer1/res2/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/blayer1/res2/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/blayer1/res2/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/deconv2': [?, 128, 32, 32] --> [?, 64, 64, 64]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/B/deconv3': [?, 64, 64, 64] --> [?, 3, 128, 128]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/conv0': [?, 3, 128, 128] --> [?, 64, 64, 64]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/conv1': [?, 64, 64, 64] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res0/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res0/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res0/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res1/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res1/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res1/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res2/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res2/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer1/res2/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/conv2': [?, 128, 32, 32] --> [?, 256, 16, 16]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer2/res0/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer2/res0/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer2/res0/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:17 @registry.py:90][0m 'gen/A/layer2/res1/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer2/res1/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer2/res1/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer2/res2/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer2/res2/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer2/res2/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/conv3': [?, 256, 16, 16] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res0/conv0': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res0/conv1': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res0/conv2': [?, 1024, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res1/conv0': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res1/conv1': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res1/conv2': [?, 1024, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res2/conv0': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res2/conv1': [?, 512, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/layer3/res2/conv2': [?, 1024, 8, 8] --> [?, 512, 8, 8]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/deconv0': [?, 512, 8, 8] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res0/conv0': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res0/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res0/conv2': [?, 768, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res1/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res1/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res1/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res2/conv0': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res2/conv1': [?, 256, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer2/res2/conv2': [?, 512, 16, 16] --> [?, 256, 16, 16]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/deconv1': [?, 256, 16, 16] --> [?, 128, 32, 32]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer1/res0/conv0': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer1/res0/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer1/res0/conv2': [?, 384, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:18 @registry.py:90][0m 'gen/A/blayer1/res1/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:19 @registry.py:90][0m 'gen/A/blayer1/res1/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:19 @registry.py:90][0m 'gen/A/blayer1/res1/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:19 @registry.py:90][0m 'gen/A/blayer1/res2/conv0': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:19 @registry.py:90][0m 'gen/A/blayer1/res2/conv1': [?, 128, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:19 @registry.py:90][0m 'gen/A/blayer1/res2/conv2': [?, 256, 32, 32] --> [?, 128, 32, 32]
+[32m[1204 21:25:19 @registry.py:90][0m 'gen/A/deconv2': [?, 128, 32, 32] --> [?, 64, 64, 64]
+[32m[1204 21:25:19 @registry.py:90][0m 'gen/A/deconv3': [?, 64, 64, 64] --> [?, 3, 128, 128]
+[32m[1204 21:25:20 @registry.py:90][0m 'discrim/A/conv0': [?, 3, 128, 128] --> [?, 128, 64, 64]
+[32m[1204 21:25:20 @registry.py:90][0m 'discrim/A/conv1': [?, 128, 64, 64] --> [?, 256, 32, 32]
+[32m[1204 21:25:20 @registry.py:90][0m 'discrim/A/conv2': [?, 256, 32, 32] --> [?, 512, 16, 16]
+[32m[1204 21:25:20 @registry.py:90][0m 'discrim/A/convf': [?, 512, 16, 16] --> [?, 512, 16, 16]
+[32m[1204 21:25:20 @registry.py:90][0m 'discrim/A/mConv': [?, 1024, 16, 16] --> [?, 512, 16, 16]
+[32m[1204 21:25:20 @registry.py:90][0m 'discrim/A/lsconv': [?, 512, 16, 16] --> [?, 1, 16, 16]
+[32m[1204 21:25:21 @registry.py:90][0m 'discrim/B/conv0': [?, 3, 128, 128] --> [?, 128, 64, 64]
+[32m[1204 21:25:21 @registry.py:90][0m 'discrim/B/conv1': [?, 128, 64, 64] --> [?, 256, 32, 32]
+[32m[1204 21:25:21 @registry.py:90][0m 'discrim/B/conv2': [?, 256, 32, 32] --> [?, 512, 16, 16]
+[32m[1204 21:25:21 @registry.py:90][0m 'discrim/B/convf': [?, 512, 16, 16] --> [?, 512, 16, 16]
+[32m[1204 21:25:21 @registry.py:90][0m 'discrim/B/mConv': [?, 1024, 16, 16] --> [?, 512, 16, 16]
+[32m[1204 21:25:21 @registry.py:90][0m 'discrim/B/lsconv': [?, 512, 16, 16] --> [?, 1, 16, 16]
+[32m[1204 21:25:55 @model_utils.py:67][0m [36mList of Trainable Variables: 
+[0mname                                  shape                #elements
+------------------------------------  -----------------  -----------
+gen/B/conv0/W                         [4, 4, 3, 64]             3072
+gen/B/conv1/W                         [4, 4, 64, 128]         131072
+gen/B/conv1/inorm/beta                [128]                      128
+gen/B/conv1/inorm/gamma               [128]                      128
+gen/B/layer1/res0/conv0/W             [3, 3, 128, 128]        147456
+gen/B/layer1/res0/conv0/inorm/beta    [128]                      128
+gen/B/layer1/res0/conv0/inorm/gamma   [128]                      128
+gen/B/layer1/res0/conv1/W             [3, 3, 128, 128]        147456
+gen/B/layer1/res0/conv1/inorm/beta    [128]                      128
+gen/B/layer1/res0/conv1/inorm/gamma   [128]                      128
+gen/B/layer1/res0/conv2/W             [3, 3, 256, 128]        294912
+gen/B/layer1/res0/conv2/inorm/beta    [128]                      128
+gen/B/layer1/res0/conv2/inorm/gamma   [128]                      128
+gen/B/layer1/res1/conv0/W             [3, 3, 128, 128]        147456
+gen/B/layer1/res1/conv0/inorm/beta    [128]                      128
+gen/B/layer1/res1/conv0/inorm/gamma   [128]                      128
+gen/B/layer1/res1/conv1/W             [3, 3, 128, 128]        147456
+gen/B/layer1/res1/conv1/inorm/beta    [128]                      128
+gen/B/layer1/res1/conv1/inorm/gamma   [128]                      128
+gen/B/layer1/res1/conv2/W             [3, 3, 256, 128]        294912
+gen/B/layer1/res1/conv2/inorm/beta    [128]                      128
+gen/B/layer1/res1/conv2/inorm/gamma   [128]                      128
+gen/B/layer1/res2/conv0/W             [3, 3, 128, 128]        147456
+gen/B/layer1/res2/conv0/inorm/beta    [128]                      128
+gen/B/layer1/res2/conv0/inorm/gamma   [128]                      128
+gen/B/layer1/res2/conv1/W             [3, 3, 128, 128]        147456
+gen/B/layer1/res2/conv1/inorm/beta    [128]                      128
+gen/B/layer1/res2/conv1/inorm/gamma   [128]                      128
+gen/B/layer1/res2/conv2/W             [3, 3, 256, 128]        294912
+gen/B/layer1/res2/conv2/inorm/beta    [128]                      128
+gen/B/layer1/res2/conv2/inorm/gamma   [128]                      128
+gen/B/conv2/W                         [4, 4, 128, 256]        524288
+gen/B/conv2/inorm/beta                [256]                      256
+gen/B/conv2/inorm/gamma               [256]                      256
+gen/B/layer2/res0/conv0/W             [3, 3, 256, 256]        589824
+gen/B/layer2/res0/conv0/inorm/beta    [256]                      256
+gen/B/layer2/res0/conv0/inorm/gamma   [256]                      256
+gen/B/layer2/res0/conv1/W             [3, 3, 256, 256]        589824
+gen/B/layer2/res0/conv1/inorm/beta    [256]                      256
+gen/B/layer2/res0/conv1/inorm/gamma   [256]                      256
+gen/B/layer2/res0/conv2/W             [3, 3, 512, 256]       1179648
+gen/B/layer2/res0/conv2/inorm/beta    [256]                      256
+gen/B/layer2/res0/conv2/inorm/gamma   [256]                      256
+gen/B/layer2/res1/conv0/W             [3, 3, 256, 256]        589824
+gen/B/layer2/res1/conv0/inorm/beta    [256]                      256
+gen/B/layer2/res1/conv0/inorm/gamma   [256]                      256
+gen/B/layer2/res1/conv1/W             [3, 3, 256, 256]        589824
+gen/B/layer2/res1/conv1/inorm/beta    [256]                      256
+gen/B/layer2/res1/conv1/inorm/gamma   [256]                      256
+gen/B/layer2/res1/conv2/W             [3, 3, 512, 256]       1179648
+gen/B/layer2/res1/conv2/inorm/beta    [256]                      256
+gen/B/layer2/res1/conv2/inorm/gamma   [256]                      256
+gen/B/layer2/res2/conv0/W             [3, 3, 256, 256]        589824
+gen/B/layer2/res2/conv0/inorm/beta    [256]                      256
+gen/B/layer2/res2/conv0/inorm/gamma   [256]                      256
+gen/B/layer2/res2/conv1/W             [3, 3, 256, 256]        589824
+gen/B/layer2/res2/conv1/inorm/beta    [256]                      256
+gen/B/layer2/res2/conv1/inorm/gamma   [256]                      256
+gen/B/layer2/res2/conv2/W             [3, 3, 512, 256]       1179648
+gen/B/layer2/res2/conv2/inorm/beta    [256]                      256
+gen/B/layer2/res2/conv2/inorm/gamma   [256]                      256
+gen/B/conv3/W                         [4, 4, 256, 512]       2097152
+gen/B/conv3/inorm/beta                [512]                      512
+gen/B/conv3/inorm/gamma               [512]                      512
+gen/B/layer3/res0/conv0/W             [3, 3, 512, 512]       2359296
+gen/B/layer3/res0/conv0/inorm/beta    [512]                      512
+gen/B/layer3/res0/conv0/inorm/gamma   [512]                      512
+gen/B/layer3/res0/conv1/W             [3, 3, 512, 512]       2359296
+gen/B/layer3/res0/conv1/inorm/beta    [512]                      512
+gen/B/layer3/res0/conv1/inorm/gamma   [512]                      512
+gen/B/layer3/res0/conv2/W             [3, 3, 1024, 512]      4718592
+gen/B/layer3/res0/conv2/inorm/beta    [512]                      512
+gen/B/layer3/res0/conv2/inorm/gamma   [512]                      512
+gen/B/layer3/res1/conv0/W             [3, 3, 512, 512]       2359296
+gen/B/layer3/res1/conv0/inorm/beta    [512]                      512
+gen/B/layer3/res1/conv0/inorm/gamma   [512]                      512
+gen/B/layer3/res1/conv1/W             [3, 3, 512, 512]       2359296
+gen/B/layer3/res1/conv1/inorm/beta    [512]                      512
+gen/B/layer3/res1/conv1/inorm/gamma   [512]                      512
+gen/B/layer3/res1/conv2/W             [3, 3, 1024, 512]      4718592
+gen/B/layer3/res1/conv2/inorm/beta    [512]                      512
+gen/B/layer3/res1/conv2/inorm/gamma   [512]                      512
+gen/B/layer3/res2/conv0/W             [3, 3, 512, 512]       2359296
+gen/B/layer3/res2/conv0/inorm/beta    [512]                      512
+gen/B/layer3/res2/conv0/inorm/gamma   [512]                      512
+gen/B/layer3/res2/conv1/W             [3, 3, 512, 512]       2359296
+gen/B/layer3/res2/conv1/inorm/beta    [512]                      512
+gen/B/layer3/res2/conv1/inorm/gamma   [512]                      512
+gen/B/layer3/res2/conv2/W             [3, 3, 1024, 512]      4718592
+gen/B/layer3/res2/conv2/inorm/beta    [512]                      512
+gen/B/layer3/res2/conv2/inorm/gamma   [512]                      512
+gen/B/deconv0/W                       [4, 4, 256, 512]       2097152
+gen/B/deconv0/inorm/beta              [256]                      256
+gen/B/deconv0/inorm/gamma             [256]                      256
+gen/B/blayer2/res0/conv0/W            [3, 3, 512, 256]       1179648
+gen/B/blayer2/res0/conv0/inorm/beta   [256]                      256
+gen/B/blayer2/res0/conv0/inorm/gamma  [256]                      256
+gen/B/blayer2/res0/conv1/W            [3, 3, 256, 256]        589824
+gen/B/blayer2/res0/conv1/inorm/beta   [256]                      256
+gen/B/blayer2/res0/conv1/inorm/gamma  [256]                      256
+gen/B/blayer2/res0/conv2/W            [3, 3, 768, 256]       1769472
+gen/B/blayer2/res0/conv2/inorm/beta   [256]                      256
+gen/B/blayer2/res0/conv2/inorm/gamma  [256]                      256
+gen/B/blayer2/res1/conv0/W            [3, 3, 256, 256]        589824
+gen/B/blayer2/res1/conv0/inorm/beta   [256]                      256
+gen/B/blayer2/res1/conv0/inorm/gamma  [256]                      256
+gen/B/blayer2/res1/conv1/W            [3, 3, 256, 256]        589824
+gen/B/blayer2/res1/conv1/inorm/beta   [256]                      256
+gen/B/blayer2/res1/conv1/inorm/gamma  [256]                      256
+gen/B/blayer2/res1/conv2/W            [3, 3, 512, 256]       1179648
+gen/B/blayer2/res1/conv2/inorm/beta   [256]                      256
+gen/B/blayer2/res1/conv2/inorm/gamma  [256]                      256
+gen/B/blayer2/res2/conv0/W            [3, 3, 256, 256]        589824
+gen/B/blayer2/res2/conv0/inorm/beta   [256]                      256
+gen/B/blayer2/res2/conv0/inorm/gamma  [256]                      256
+gen/B/blayer2/res2/conv1/W            [3, 3, 256, 256]        589824
+gen/B/blayer2/res2/conv1/inorm/beta   [256]                      256
+gen/B/blayer2/res2/conv1/inorm/gamma  [256]                      256
+gen/B/blayer2/res2/conv2/W            [3, 3, 512, 256]       1179648
+gen/B/blayer2/res2/conv2/inorm/beta   [256]                      256
+gen/B/blayer2/res2/conv2/inorm/gamma  [256]                      256
+gen/B/deconv1/W                       [4, 4, 128, 256]        524288
+gen/B/deconv1/inorm/beta              [128]                      128
+gen/B/deconv1/inorm/gamma             [128]                      128
+gen/B/blayer1/res0/conv0/W            [3, 3, 256, 128]        294912
+gen/B/blayer1/res0/conv0/inorm/beta   [128]                      128
+gen/B/blayer1/res0/conv0/inorm/gamma  [128]                      128
+gen/B/blayer1/res0/conv1/W            [3, 3, 128, 128]        147456
+gen/B/blayer1/res0/conv1/inorm/beta   [128]                      128
+gen/B/blayer1/res0/conv1/inorm/gamma  [128]                      128
+gen/B/blayer1/res0/conv2/W            [3, 3, 384, 128]        442368
+gen/B/blayer1/res0/conv2/inorm/beta   [128]                      128
+gen/B/blayer1/res0/conv2/inorm/gamma  [128]                      128
+gen/B/blayer1/res1/conv0/W            [3, 3, 128, 128]        147456
+gen/B/blayer1/res1/conv0/inorm/beta   [128]                      128
+gen/B/blayer1/res1/conv0/inorm/gamma  [128]                      128
+gen/B/blayer1/res1/conv1/W            [3, 3, 128, 128]        147456
+gen/B/blayer1/res1/conv1/inorm/beta   [128]                      128
+gen/B/blayer1/res1/conv1/inorm/gamma  [128]                      128
+gen/B/blayer1/res1/conv2/W            [3, 3, 256, 128]        294912
+gen/B/blayer1/res1/conv2/inorm/beta   [128]                      128
+gen/B/blayer1/res1/conv2/inorm/gamma  [128]                      128
+gen/B/blayer1/res2/conv0/W            [3, 3, 128, 128]        147456
+gen/B/blayer1/res2/conv0/inorm/beta   [128]                      128
+gen/B/blayer1/res2/conv0/inorm/gamma  [128]                      128
+gen/B/blayer1/res2/conv1/W            [3, 3, 128, 128]        147456
+gen/B/blayer1/res2/conv1/inorm/beta   [128]                      128
+gen/B/blayer1/res2/conv1/inorm/gamma  [128]                      128
+gen/B/blayer1/res2/conv2/W            [3, 3, 256, 128]        294912
+gen/B/blayer1/res2/conv2/inorm/beta   [128]                      128
+gen/B/blayer1/res2/conv2/inorm/gamma  [128]                      128
+gen/B/deconv2/W                       [4, 4, 64, 128]         131072
+gen/B/deconv2/inorm/beta              [64]                        64
+gen/B/deconv2/inorm/gamma             [64]                        64
+gen/B/deconv3/W                       [4, 4, 3, 64]             3072
+gen/A/conv0/W                         [4, 4, 3, 64]             3072
+gen/A/conv1/W                         [4, 4, 64, 128]         131072
+gen/A/conv1/inorm/beta                [128]                      128
+gen/A/conv1/inorm/gamma               [128]                      128
+gen/A/layer1/res0/conv0/W             [3, 3, 128, 128]        147456
+gen/A/layer1/res0/conv0/inorm/beta    [128]                      128
+gen/A/layer1/res0/conv0/inorm/gamma   [128]                      128
+gen/A/layer1/res0/conv1/W             [3, 3, 128, 128]        147456
+gen/A/layer1/res0/conv1/inorm/beta    [128]                      128
+gen/A/layer1/res0/conv1/inorm/gamma   [128]                      128
+gen/A/layer1/res0/conv2/W             [3, 3, 256, 128]        294912
+gen/A/layer1/res0/conv2/inorm/beta    [128]                      128
+gen/A/layer1/res0/conv2/inorm/gamma   [128]                      128
+gen/A/layer1/res1/conv0/W             [3, 3, 128, 128]        147456
+gen/A/layer1/res1/conv0/inorm/beta    [128]                      128
+gen/A/layer1/res1/conv0/inorm/gamma   [128]                      128
+gen/A/layer1/res1/conv1/W             [3, 3, 128, 128]        147456
+gen/A/layer1/res1/conv1/inorm/beta    [128]                      128
+gen/A/layer1/res1/conv1/inorm/gamma   [128]                      128
+gen/A/layer1/res1/conv2/W             [3, 3, 256, 128]        294912
+gen/A/layer1/res1/conv2/inorm/beta    [128]                      128
+gen/A/layer1/res1/conv2/inorm/gamma   [128]                      128
+gen/A/layer1/res2/conv0/W             [3, 3, 128, 128]        147456
+gen/A/layer1/res2/conv0/inorm/beta    [128]                      128
+gen/A/layer1/res2/conv0/inorm/gamma   [128]                      128
+gen/A/layer1/res2/conv1/W             [3, 3, 128, 128]        147456
+gen/A/layer1/res2/conv1/inorm/beta    [128]                      128
+gen/A/layer1/res2/conv1/inorm/gamma   [128]                      128
+gen/A/layer1/res2/conv2/W             [3, 3, 256, 128]        294912
+gen/A/layer1/res2/conv2/inorm/beta    [128]                      128
+gen/A/layer1/res2/conv2/inorm/gamma   [128]                      128
+gen/A/conv2/W                         [4, 4, 128, 256]        524288
+gen/A/conv2/inorm/beta                [256]                      256
+gen/A/conv2/inorm/gamma               [256]                      256
+gen/A/layer2/res0/conv0/W             [3, 3, 256, 256]        589824
+gen/A/layer2/res0/conv0/inorm/beta    [256]                      256
+gen/A/layer2/res0/conv0/inorm/gamma   [256]                      256
+gen/A/layer2/res0/conv1/W             [3, 3, 256, 256]        589824
+gen/A/layer2/res0/conv1/inorm/beta    [256]                      256
+gen/A/layer2/res0/conv1/inorm/gamma   [256]                      256
+gen/A/layer2/res0/conv2/W             [3, 3, 512, 256]       1179648
+gen/A/layer2/res0/conv2/inorm/beta    [256]                      256
+gen/A/layer2/res0/conv2/inorm/gamma   [256]                      256
+gen/A/layer2/res1/conv0/W             [3, 3, 256, 256]        589824
+gen/A/layer2/res1/conv0/inorm/beta    [256]                      256
+gen/A/layer2/res1/conv0/inorm/gamma   [256]                      256
+gen/A/layer2/res1/conv1/W             [3, 3, 256, 256]        589824
+gen/A/layer2/res1/conv1/inorm/beta    [256]                      256
+gen/A/layer2/res1/conv1/inorm/gamma   [256]                      256
+gen/A/layer2/res1/conv2/W             [3, 3, 512, 256]       1179648
+gen/A/layer2/res1/conv2/inorm/beta    [256]                      256
+gen/A/layer2/res1/conv2/inorm/gamma   [256]                      256
+gen/A/layer2/res2/conv0/W             [3, 3, 256, 256]        589824
+gen/A/layer2/res2/conv0/inorm/beta    [256]                      256
+gen/A/layer2/res2/conv0/inorm/gamma   [256]                      256
+gen/A/layer2/res2/conv1/W             [3, 3, 256, 256]        589824
+gen/A/layer2/res2/conv1/inorm/beta    [256]                      256
+gen/A/layer2/res2/conv1/inorm/gamma   [256]                      256
+gen/A/layer2/res2/conv2/W             [3, 3, 512, 256]       1179648
+gen/A/layer2/res2/conv2/inorm/beta    [256]                      256
+gen/A/layer2/res2/conv2/inorm/gamma   [256]                      256
+gen/A/conv3/W                         [4, 4, 256, 512]       2097152
+gen/A/conv3/inorm/beta                [512]                      512
+gen/A/conv3/inorm/gamma               [512]                      512
+gen/A/layer3/res0/conv0/W             [3, 3, 512, 512]       2359296
+gen/A/layer3/res0/conv0/inorm/beta    [512]                      512
+gen/A/layer3/res0/conv0/inorm/gamma   [512]                      512
+gen/A/layer3/res0/conv1/W             [3, 3, 512, 512]       2359296
+gen/A/layer3/res0/conv1/inorm/beta    [512]                      512
+gen/A/layer3/res0/conv1/inorm/gamma   [512]                      512
+gen/A/layer3/res0/conv2/W             [3, 3, 1024, 512]      4718592
+gen/A/layer3/res0/conv2/inorm/beta    [512]                      512
+gen/A/layer3/res0/conv2/inorm/gamma   [512]                      512
+gen/A/layer3/res1/conv0/W             [3, 3, 512, 512]       2359296
+gen/A/layer3/res1/conv0/inorm/beta    [512]                      512
+gen/A/layer3/res1/conv0/inorm/gamma   [512]                      512
+gen/A/layer3/res1/conv1/W             [3, 3, 512, 512]       2359296
+gen/A/layer3/res1/conv1/inorm/beta    [512]                      512
+gen/A/layer3/res1/conv1/inorm/gamma   [512]                      512
+gen/A/layer3/res1/conv2/W             [3, 3, 1024, 512]      4718592
+gen/A/layer3/res1/conv2/inorm/beta    [512]                      512
+gen/A/layer3/res1/conv2/inorm/gamma   [512]                      512
+gen/A/layer3/res2/conv0/W             [3, 3, 512, 512]       2359296
+gen/A/layer3/res2/conv0/inorm/beta    [512]                      512
+gen/A/layer3/res2/conv0/inorm/gamma   [512]                      512
+gen/A/layer3/res2/conv1/W             [3, 3, 512, 512]       2359296
+gen/A/layer3/res2/conv1/inorm/beta    [512]                      512
+gen/A/layer3/res2/conv1/inorm/gamma   [512]                      512
+gen/A/layer3/res2/conv2/W             [3, 3, 1024, 512]      4718592
+gen/A/layer3/res2/conv2/inorm/beta    [512]                      512
+gen/A/layer3/res2/conv2/inorm/gamma   [512]                      512
+gen/A/deconv0/W                       [4, 4, 256, 512]       2097152
+gen/A/deconv0/inorm/beta              [256]                      256
+gen/A/deconv0/inorm/gamma             [256]                      256
+gen/A/blayer2/res0/conv0/W            [3, 3, 512, 256]       1179648
+gen/A/blayer2/res0/conv0/inorm/beta   [256]                      256
+gen/A/blayer2/res0/conv0/inorm/gamma  [256]                      256
+gen/A/blayer2/res0/conv1/W            [3, 3, 256, 256]        589824
+gen/A/blayer2/res0/conv1/inorm/beta   [256]                      256
+gen/A/blayer2/res0/conv1/inorm/gamma  [256]                      256
+gen/A/blayer2/res0/conv2/W            [3, 3, 768, 256]       1769472
+gen/A/blayer2/res0/conv2/inorm/beta   [256]                      256
+gen/A/blayer2/res0/conv2/inorm/gamma  [256]                      256
+gen/A/blayer2/res1/conv0/W            [3, 3, 256, 256]        589824
+gen/A/blayer2/res1/conv0/inorm/beta   [256]                      256
+gen/A/blayer2/res1/conv0/inorm/gamma  [256]                      256
+gen/A/blayer2/res1/conv1/W            [3, 3, 256, 256]        589824
+gen/A/blayer2/res1/conv1/inorm/beta   [256]                      256
+gen/A/blayer2/res1/conv1/inorm/gamma  [256]                      256
+gen/A/blayer2/res1/conv2/W            [3, 3, 512, 256]       1179648
+gen/A/blayer2/res1/conv2/inorm/beta   [256]                      256
+gen/A/blayer2/res1/conv2/inorm/gamma  [256]                      256
+gen/A/blayer2/res2/conv0/W            [3, 3, 256, 256]        589824
+gen/A/blayer2/res2/conv0/inorm/beta   [256]                      256
+gen/A/blayer2/res2/conv0/inorm/gamma  [256]                      256
+gen/A/blayer2/res2/conv1/W            [3, 3, 256, 256]        589824
+gen/A/blayer2/res2/conv1/inorm/beta   [256]                      256
+gen/A/blayer2/res2/conv1/inorm/gamma  [256]                      256
+gen/A/blayer2/res2/conv2/W            [3, 3, 512, 256]       1179648
+gen/A/blayer2/res2/conv2/inorm/beta   [256]                      256
+gen/A/blayer2/res2/conv2/inorm/gamma  [256]                      256
+gen/A/deconv1/W                       [4, 4, 128, 256]        524288
+gen/A/deconv1/inorm/beta              [128]                      128
+gen/A/deconv1/inorm/gamma             [128]                      128
+gen/A/blayer1/res0/conv0/W            [3, 3, 256, 128]        294912
+gen/A/blayer1/res0/conv0/inorm/beta   [128]                      128
+gen/A/blayer1/res0/conv0/inorm/gamma  [128]                      128
+gen/A/blayer1/res0/conv1/W            [3, 3, 128, 128]        147456
+gen/A/blayer1/res0/conv1/inorm/beta   [128]                      128
+gen/A/blayer1/res0/conv1/inorm/gamma  [128]                      128
+gen/A/blayer1/res0/conv2/W            [3, 3, 384, 128]        442368
+gen/A/blayer1/res0/conv2/inorm/beta   [128]                      128
+gen/A/blayer1/res0/conv2/inorm/gamma  [128]                      128
+gen/A/blayer1/res1/conv0/W            [3, 3, 128, 128]        147456
+gen/A/blayer1/res1/conv0/inorm/beta   [128]                      128
+gen/A/blayer1/res1/conv0/inorm/gamma  [128]                      128
+gen/A/blayer1/res1/conv1/W            [3, 3, 128, 128]        147456
+gen/A/blayer1/res1/conv1/inorm/beta   [128]                      128
+gen/A/blayer1/res1/conv1/inorm/gamma  [128]                      128
+gen/A/blayer1/res1/conv2/W            [3, 3, 256, 128]        294912
+gen/A/blayer1/res1/conv2/inorm/beta   [128]                      128
+gen/A/blayer1/res1/conv2/inorm/gamma  [128]                      128
+gen/A/blayer1/res2/conv0/W            [3, 3, 128, 128]        147456
+gen/A/blayer1/res2/conv0/inorm/beta   [128]                      128
+gen/A/blayer1/res2/conv0/inorm/gamma  [128]                      128
+gen/A/blayer1/res2/conv1/W            [3, 3, 128, 128]        147456
+gen/A/blayer1/res2/conv1/inorm/beta   [128]                      128
+gen/A/blayer1/res2/conv1/inorm/gamma  [128]                      128
+gen/A/blayer1/res2/conv2/W            [3, 3, 256, 128]        294912
+gen/A/blayer1/res2/conv2/inorm/beta   [128]                      128
+gen/A/blayer1/res2/conv2/inorm/gamma  [128]                      128
+gen/A/deconv2/W                       [4, 4, 64, 128]         131072
+gen/A/deconv2/inorm/beta              [64]                        64
+gen/A/deconv2/inorm/gamma             [64]                        64
+gen/A/deconv3/W                       [4, 4, 3, 64]             3072
+discrim/A/conv0/W                     [4, 4, 3, 128]            6144
+discrim/A/conv1/W                     [4, 4, 128, 256]        524288
+discrim/A/conv1/inorm/beta            [256]                      256
+discrim/A/conv1/inorm/gamma           [256]                      256
+discrim/A/conv2/W                     [4, 4, 256, 512]       2097152
+discrim/A/conv2/inorm/beta            [512]                      512
+discrim/A/conv2/inorm/gamma           [512]                      512
+discrim/A/convf/W                     [3, 3, 512, 512]       2359296
+discrim/A/convf/inorm/beta            [512]                      512
+discrim/A/convf/inorm/gamma           [512]                      512
+discrim/A/Conv/weights                [3, 3, 512, 512]       2359296
+discrim/A/Conv/inorm/beta             [512]                      512
+discrim/A/Conv/inorm/gamma            [512]                      512
+discrim/A/Conv_1/weights              [3, 3, 512, 512]       2359296
+discrim/A/Conv_1/inorm/beta           [512]                      512
+discrim/A/Conv_1/inorm/gamma          [512]                      512
+discrim/A/Conv_2/weights              [3, 3, 512, 512]       2359296
+discrim/A/Conv_2/inorm/beta           [512]                      512
+discrim/A/Conv_2/inorm/gamma          [512]                      512
+discrim/A/mConv/W                     [3, 3, 1024, 512]      4718592
+discrim/A/mConv/inorm/beta            [512]                      512
+discrim/A/mConv/inorm/gamma           [512]                      512
+discrim/A/lsconv/W                    [4, 4, 512, 1]            8192
+discrim/B/conv0/W                     [4, 4, 3, 128]            6144
+discrim/B/conv1/W                     [4, 4, 128, 256]        524288
+discrim/B/conv1/inorm/beta            [256]                      256
+discrim/B/conv1/inorm/gamma           [256]                      256
+discrim/B/conv2/W                     [4, 4, 256, 512]       2097152
+discrim/B/conv2/inorm/beta            [512]                      512
+discrim/B/conv2/inorm/gamma           [512]                      512
+discrim/B/convf/W                     [3, 3, 512, 512]       2359296
+discrim/B/convf/inorm/beta            [512]                      512
+discrim/B/convf/inorm/gamma           [512]                      512
+discrim/B/Conv/weights                [3, 3, 512, 512]       2359296
+discrim/B/Conv/inorm/beta             [512]                      512
+discrim/B/Conv/inorm/gamma            [512]                      512
+discrim/B/Conv_1/weights              [3, 3, 512, 512]       2359296
+discrim/B/Conv_1/inorm/beta           [512]                      512
+discrim/B/Conv_1/inorm/gamma          [512]                      512
+discrim/B/Conv_2/weights              [3, 3, 512, 512]       2359296
+discrim/B/Conv_2/inorm/beta           [512]                      512
+discrim/B/Conv_2/inorm/gamma          [512]                      512
+discrim/B/mConv/W                     [3, 3, 1024, 512]      4718592
+discrim/B/mConv/inorm/beta            [512]                      512
+discrim/B/mConv/inorm/gamma           [512]                      512
+discrim/B/lsconv/W                    [4, 4, 512, 1]            8192[36m
+Number of trainable variables: 356
+Number of parameters (elements): 139631872
+Storage space needed for all trainable variables: 532.65MB[0m
+[32m[1204 21:25:55 @base.py:209][0m Setup callbacks graph ...
+[32m[1204 21:25:55 @argtools.py:146][0m [5m[31mWRN[0m Starting a process with 'fork' method is not safe and may consume unnecessary extra CPU memory. Use 'forkserver/spawn' method (available after Py3.4) instead if you run into any issues. See https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods
+[32m[1204 21:26:00 @tower.py:140][0m Building graph for predict tower 'tower-pred-0' on device /gpu:0 ...
+[32m[1204 21:26:11 @collection.py:165][0m These collections were modified but restored in tower-pred-0: (tf.GraphKeys.SUMMARIES: 28->34), (tf.GraphKeys.UPDATE_OPS: 4->8)
+[32m[1204 21:26:11 @summary.py:47][0m [MovingAverageSummary] 21 operations in collection 'MOVING_SUMMARY_OPS' will be run with session hooks.
+[32m[1204 21:26:11 @summary.py:94][0m Summarizing collection 'summaries' of size 28.
+[32m[1204 21:26:11 @graph.py:100][0m Applying collection UPDATE_OPS of 4 ops.
+[32m[1204 21:26:11 @base.py:230][0m Creating the session ...
+[32m[1204 21:26:37 @base.py:236][0m Initializing the session ...
+[32m[1204 21:26:37 @base.py:243][0m Graph Finalized.
+[32m[1204 21:26:38 @concurrency.py:37][0m Starting EnqueueThread QueueInput/input_queue ...
+[32m[1204 21:26:40 @parallel.py:366][0m [4m[5m[31mERR[0m Exception '<class 'AssertionError'>' in worker:
+[32m[1204 21:26:40 @input_source.py:173][0m [4m[5m[31mERR[0m [EnqueueThread] Exception in thread EnqueueThread QueueInput/input_queue:
+Traceback (most recent call last):
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/input_source/input_source.py", line 161, in run
+    dp = next(self._itr)
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/common.py", line 386, in __iter__
+    for dp in self.ds:
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/parallel.py", line 378, in __iter__
+    yield self._recv()
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/parallel.py", line 367, in _recv
+    raise exc.exc_type(exc.exc_msg)
+AssertionError: Traceback (most recent call last):
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/parallel.py", line 324, in run
+    dp = next(itr)
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/parallel.py", line 51, in _repeat_iter
+    for x in get_itr():
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/common.py", line 118, in __iter__
+    for data in self.ds:
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/common.py", line 574, in __iter__
+    all_dps = [next(itr) for itr in itrs]
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/common.py", line 574, in <listcomp>
+    all_dps = [next(itr) for itr in itrs]
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/common.py", line 312, in __iter__
+    for dp in self.ds:
+  File "/Users/phyllisli19981111/miniconda3/lib/python3.7/site-packages/tensorpack/dataflow/image.py", line 75, in __iter__
+    assert im is not None, f
+AssertionError: ../data/PetImages/trainB/11675.jpg
+
+[32m[1204 21:26:42 @input_source.py:179][0m [EnqueueThread] Thread EnqueueThread QueueInput/input_queue Exited.
