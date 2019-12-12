@@ -48,6 +48,7 @@ class MsImageDis(nn.Module):
         for model in self.cnns:
             outputs.append(model(x))
             x = self.downsample(x)
+#             x = F.tanh(x) #Wasserstein GAN
         return outputs
 
     def calc_dis_loss(self, input_fake, input_real):
@@ -59,6 +60,8 @@ class MsImageDis(nn.Module):
         for it, (out0, out1) in enumerate(zip(outs0, outs1)):
             if self.gan_type == 'lsgan':
                 loss += torch.mean((out0 - 0)**2) + torch.mean((out1 - 1)**2)
+            elif self.gan_type == 'wgan':
+                loss += torch.mean(out0) - torch.mean(out1)    # wgan dis loss
             elif self.gan_type == 'nsgan':
                 all0 = Variable(torch.zeros_like(out0.data).cuda(), requires_grad=False)
                 all1 = Variable(torch.ones_like(out1.data).cuda(), requires_grad=False)
@@ -75,6 +78,8 @@ class MsImageDis(nn.Module):
         for it, (out0) in enumerate(outs0):
             if self.gan_type == 'lsgan':
                 loss += torch.mean((out0 - 1)**2) # LSGAN
+            elif self.gan_type == 'wgan':
+                loss += -torch.mean(out0 ) # WGAN
             elif self.gan_type == 'nsgan':
                 all1 = Variable(torch.ones_like(out0.data).cuda(), requires_grad=False)
                 loss += torch.mean(F.binary_cross_entropy(F.sigmoid(out0), all1))

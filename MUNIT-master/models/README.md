@@ -1,0 +1,2 @@
+# This directory is used for saving trained weights, for testing purpose, you only need the generator weight to generate the image. However, we also provide the weight of discriminator in case of continue training.
+Here is the google drive link: https://drive.google.com/open?id=1Xph4TPGyBpa1j7NNQONThCQDC3OgT9oC

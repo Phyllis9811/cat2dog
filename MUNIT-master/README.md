@@ -2,7 +2,9 @@
 ![Python 2.7](https://img.shields.io/badge/python-2.7-green.svg)
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)
 ## MUNIT: Multimodal UNsupervised Image-to-image Translation
+### Instruction
 
+Our course project is build on top of the original MUNIT model, we modified the network structure and also create a model structure [config file]  (configs/dog_cat.yaml)
 ### License
 
 Copyright (C) 2018 NVIDIA Corporation.  All rights reserved.

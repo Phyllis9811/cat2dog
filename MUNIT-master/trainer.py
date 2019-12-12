@@ -31,10 +31,15 @@ class MUNIT_Trainer(nn.Module):
         beta2 = hyperparameters['beta2']
         dis_params = list(self.dis_a.parameters()) + list(self.dis_b.parameters())
         gen_params = list(self.gen_a.parameters()) + list(self.gen_b.parameters())
-        self.dis_opt = torch.optim.Adam([p for p in dis_params if p.requires_grad],
-                                        lr=lr, betas=(beta1, beta2), weight_decay=hyperparameters['weight_decay'])
-        self.gen_opt = torch.optim.Adam([p for p in gen_params if p.requires_grad],
-                                        lr=lr, betas=(beta1, beta2), weight_decay=hyperparameters['weight_decay'])
+        ################## Here they use adam optimizer 
+#         self.dis_opt = torch.optim.Adam([p for p in dis_params if p.requires_grad],
+#                                         lr=lr, betas=(beta1, beta2), weight_decay=hyperparameters['weight_decay'])    
+#         self.gen_opt = torch.optim.Adam([p for p in gen_params if p.requires_grad],
+#                                         lr=lr, betas=(beta1, beta2), weight_decay=hyperparameters['weight_decay'])
+        self.dis_opt = torch.optim.RMSprop([p for p in dis_params if p.requires_grad],
+                                        lr=lr, weight_decay=hyperparameters['weight_decay'])
+        self.gen_opt = torch.optim.RMSprop([p for p in gen_params if p.requires_grad],
+                                        lr=lr, weight_decay=hyperparameters['weight_decay'])
         self.dis_scheduler = get_scheduler(self.dis_opt, hyperparameters)
         self.gen_scheduler = get_scheduler(self.gen_opt, hyperparameters)
 
@@ -94,8 +99,10 @@ class MUNIT_Trainer(nn.Module):
         self.loss_gen_cycrecon_x_a = self.recon_criterion(x_aba, x_a) if hyperparameters['recon_x_cyc_w'] > 0 else 0
         self.loss_gen_cycrecon_x_b = self.recon_criterion(x_bab, x_b) if hyperparameters['recon_x_cyc_w'] > 0 else 0
         # GAN loss
-        self.loss_gen_adv_a = self.dis_a.calc_gen_loss(x_ba)
+        self.loss_gen_adv_a = self.dis_a.calc_gen_loss(x_ba)   
         self.loss_gen_adv_b = self.dis_b.calc_gen_loss(x_ab)
+#         self.loss_gen_adv_a = self.dis_a.calc_gen_loss(x_ba) #original version
+#         self.loss_gen_adv_b = self.dis_b.calc_gen_loss(x_ab)
         # domain-invariant perceptual loss
         self.loss_gen_vgg_a = self.compute_vgg_loss(self.vgg, x_ba, x_b) if hyperparameters['vgg_w'] > 0 else 0
         self.loss_gen_vgg_b = self.compute_vgg_loss(self.vgg, x_ab, x_a) if hyperparameters['vgg_w'] > 0 else 0
@@ -145,6 +152,7 @@ class MUNIT_Trainer(nn.Module):
         return x_a, x_a_recon, x_ab1, x_ab2, x_b, x_b_recon, x_ba1, x_ba2
 
     def dis_update(self, x_a, x_b, hyperparameters):
+        dis_params = list(self.dis_a.parameters()) + list(self.dis_b.parameters())
         self.dis_opt.zero_grad()
         s_a = Variable(torch.randn(x_a.size(0), self.style_dim, 1, 1).cuda())
         s_b = Variable(torch.randn(x_b.size(0), self.style_dim, 1, 1).cuda())
@@ -159,6 +167,8 @@ class MUNIT_Trainer(nn.Module):
         self.loss_dis_b = self.dis_b.calc_dis_loss(x_ab.detach(), x_b)
         self.loss_dis_total = hyperparameters['gan_w'] * self.loss_dis_a + hyperparameters['gan_w'] * self.loss_dis_b
         self.loss_dis_total.backward()
+#         print(hyperparameters)
+        torch.nn.utils.clip_grad_value_(dis_params, hyperparameters['clip_value'])  #here do the grad clipping like the WGAN
         self.dis_opt.step()
 
     def update_learning_rate(self):
